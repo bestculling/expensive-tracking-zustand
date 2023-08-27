@@ -16,7 +16,7 @@ interface storeType {
   expense: (desc: string, money: number, tag: string, createAt: string) => void;
 }
 
-const useStorePersist = persist<storeType>(
+const useStorePersist: any = persist<storeType>(
   (set) => ({
     balance: 0,
     account: [],
